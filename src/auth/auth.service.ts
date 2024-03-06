@@ -11,6 +11,7 @@ export class AuthService {
     ){    
     }
 
+    // Function to create a new user
     async create(user: IUser){
         return await this.userRepository.save(user);
     }
